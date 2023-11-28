@@ -112,3 +112,44 @@ btnGeneracion.addEventListener('click', () => {
     set domicilio(nuevoDomicilio){
       this._domicilio = nuevoDomicilio
     }
+  }
+
+  mostrarGeneracion(){
+    if(this.anioNacimiento >= 1930 && this.anioNacimiento <= 1948){
+      Swal.fire({
+        title: `Usuario: ${listaUsuarios[0].nombre}`,
+        text: "El usuario pertenece a la Generación Silent Generation. Rasgo característico: Austeridad",
+        icon: "info"
+      });
+    } else if(this.anioNacimiento >= 1949 && this.anioNacimiento <= 1968){
+      Swal.fire({
+        title: `Usuario: ${listaUsuarios[0].nombre}`,
+        text: "El usuario pertenece a la Generación Baby Boom. Rasgo característico: Ambición",
+        icon: "info"
+      });
+    } else if(this.anioNacimiento >= 1969 && this.anioNacimiento <= 1980){
+      Swal.fire({
+        title: `Usuario: ${listaUsuarios[0].nombre}`,
+        text: "El usuario pertenece a la Generación X. Rasgo característico: Obsesión por el éxito",
+        icon: "info"
+      });
+    } else if(this.anioNacimiento >= 1981 && this.anioNacimiento <= 1993){
+      Swal.fire({
+        title: `Usuario: ${listaUsuarios[0].nombre}`,
+        text: "El usuario pertenece a la Generación Y (también conocidos como millenials). Rasgo característico: Frustración",
+        icon: "info"
+      });
+    } else if(this.anioNacimiento >= 1994 && this.anioNacimiento <= 2010){
+      Swal.fire({
+        title: `Usuario: ${listaUsuarios[0].nombre}`,
+        text: "El usuario pertenece a la Generación Z. Rasgo característico: Irreverencia",
+        icon: "info"
+      });
+    } else{
+      Swal.fire({
+        title: `Usuario: ${listaUsuarios[0].nombre}`,
+        text: "El usuario no pertenece a una generación en específico o se ingresó un valor inválido.",
+        icon: "info"
+      });
+    }
+  }
