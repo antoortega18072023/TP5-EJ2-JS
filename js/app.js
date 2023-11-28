@@ -23,3 +23,16 @@ formularioDatos.onsubmit = (e) => {
     btnMostrarDatos.className = 'btn btn-primary ancho-btn-responsive d-block'
     btnEnviarDatos.className = 'btn btn-primary ancho-btn-responsive d-none'
   }
+
+  //  Funciones
+btnGeneracion.addEventListener('click', () => {
+    listaUsuarios[0].mostrarGeneracion()
+  })
+  
+  btnMayorDeEdad.addEventListener('click', () => {
+    listaUsuarios[0].esMayorDeEdad()
+  })
+  
+  btnMostrarDatos.addEventListener('click', () => {
+    listaUsuarios[0].mostrarDatos()
+  })
