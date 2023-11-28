@@ -169,3 +169,19 @@ btnGeneracion.addEventListener('click', () => {
       });
     }
   }
+
+  mostrarDatos(){
+    Swal.fire({
+      title: `<h2>Usuario: ${listaUsuarios[0].nombre}</h2>`,
+      html: 
+        `<p>Edad del usuario: ${listaUsuarios[0].edad}</p>
+        <p>DNI del usuario: ${listaUsuarios[0].dni}</p>
+        <p>Sexo del usuario: ${listaUsuarios[0].sexo}</p>
+        <p>Peso del usuario: ${listaUsuarios[0].peso}kg</p>
+        <p>Altura del usuario: ${listaUsuarios[0].altura}cm</p>
+        <p>Año de Nacimiento del usuario: ${listaUsuarios[0].anioNacimiento}</p>
+        <p>Domicilio del usuario: ${listaUsuarios[0].domicilio}</p>
+        `,
+      icon: "info"
+    });
+  }
