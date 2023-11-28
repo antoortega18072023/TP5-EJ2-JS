@@ -153,3 +153,19 @@ btnGeneracion.addEventListener('click', () => {
       });
     }
   }
+
+  esMayorDeEdad(){
+    if (this.edad >= 18) {
+      Swal.fire({
+        title: `Usuario: ${listaUsuarios[0].nombre}`,
+        text: "El usuario es mayor de edad",
+        icon: "info"
+      });
+    } else {
+      Swal.fire({
+        title: `Usuario: ${listaUsuarios[0].nombre}`,
+        text: "El usuario es menor de edad",
+        icon: "info"
+      });
+    }
+  }
