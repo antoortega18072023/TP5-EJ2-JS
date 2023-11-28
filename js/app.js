@@ -36,3 +36,79 @@ btnGeneracion.addEventListener('click', () => {
   btnMostrarDatos.addEventListener('click', () => {
     listaUsuarios[0].mostrarDatos()
   })
+
+  class Persona{
+    constructor(nombre, edad, dni, sexo, peso, altura, anioNacimiento, domicilio){
+      this._nombre = nombre
+      this._edad = edad
+      this._dni = dni
+      this._sexo = sexo
+      this._peso = peso
+      this._altura = altura
+      this._anioNacimiento = anioNacimiento
+      this._domicilio = domicilio
+    }
+  
+    get nombre(){
+      return this._nombre
+    }
+  
+    set nombre(nuevoNombre){
+      this._nombre = nuevoNombre
+    }
+    
+    get edad(){
+      return this._edad
+    }
+  
+    set edad(nuevaEdad){
+      this._edad = nuevaEdad
+    }
+    
+    get dni(){
+      return this._dni
+    }
+  
+    set dni(nuevoDNI){
+      this._dni = nuevoDNI
+    }
+    
+    get sexo(){
+      return this._sexo
+    }
+  
+    set sexo(nuevoSexo){
+      this._sexo = nuevoSexo
+    }
+    
+    get peso(){
+      return this._peso
+    }
+  
+    set peso(nuevoPeso){
+      this._peso = nuevoPeso
+    }
+    
+    get altura(){
+      return this._altura
+    }
+  
+    set altura(nuevaAltura){
+      this._altura = nuevaAltura
+    }
+    
+    get anioNacimiento(){
+      return this._anioNacimiento
+    }
+    
+    set anioNacimiento(nuevoAnioNacimiento){
+      this._anioNacimiento = nuevoAnioNacimiento
+    }
+    
+    get domicilio(){
+      return this._domicilio
+    }
+  
+    set domicilio(nuevoDomicilio){
+      this._domicilio = nuevoDomicilio
+    }
